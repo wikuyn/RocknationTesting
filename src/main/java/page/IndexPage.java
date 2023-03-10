@@ -11,28 +11,45 @@ import java.time.Duration;
 
 public class IndexPage {
     private WebDriver driver;
+    private By buttonMasuk = By.id("login-link");
     private By buttonAcceptCookie = By.id("hs-eu-confirmation-button");
     private By inputSearch = By.name("filter_artist");
+    private By buttonAkunSaya = By.id("account-dd-link");
     private By buttonProductTerbaru = By.xpath("//*[@id=\"navigation\"]/div/ul/li[1]/a");
 
     public IndexPage(WebDriver driver) {
         this.driver = driver;
+        acceptCookie();
     }
 
     public void searchProductByBandName(String bandName){
-        acceptCookie();
         driver.findElement(inputSearch).sendKeys(bandName, Keys.ENTER);
     }
 
     public ProductPage clickProdukTerbaru(){
-        acceptCookie();
+        //Refresing the page
+        driver.navigate().refresh();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.elementToBeClickable(buttonProductTerbaru));
         driver.findElement(buttonProductTerbaru).click();
         return new ProductPage(driver);
     }
 
-    private void acceptCookie(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(buttonAcceptCookie));
-        driver.findElement(buttonAcceptCookie).click();
+    public void acceptCookie(){
+        if (driver.findElement(buttonAcceptCookie).isDisplayed()){
+            driver.findElement(buttonAcceptCookie).click();
+        }
+
+    }
+
+    public LoginPage clickButtonMasuk(){
+        driver.findElement(buttonMasuk).click();
+        return new LoginPage(driver);
+    }
+
+    public AccountPage clickButtonAkunSaya(){
+        driver.findElement(buttonAkunSaya).click();
+        return new AccountPage(driver);
     }
 }

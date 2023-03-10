@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -24,8 +25,11 @@ public class BaseSetup {
         //import drive chrome
         System.setProperty("webdriver.chrome.driver", "E:\\Data\\WIKU_YOGA_NDARU\\SELENIUM\\library\\chrome\\chromedriver.exe");
 
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
         //instance driver as chrome driver;
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
+
         //setup browser to maximize
         driver.manage().window().maximize();
         //give timeout 10 scn

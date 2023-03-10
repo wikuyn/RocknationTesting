@@ -3,7 +3,7 @@ package testing;
 import base.BaseSetup;
 import org.testng.annotations.Test;
 
-public class SearchValidProduct extends BaseSetup {
+public class SearchValidProductTest extends BaseSetup {
 
     @Test()
     public void searchProductValidTest(){

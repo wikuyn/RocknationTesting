@@ -3,17 +3,22 @@ package testing;
 import base.BaseSetup;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+import page.KeranjangSidePage;
 import page.ProductDetailPage;
 import page.ProductPage;
 
-public class ProductPageTest extends BaseSetup {
+public class CheckoutWithoutLoginTest extends BaseSetup {
     private ProductPage productPage;
     private ProductDetailPage detailPage;
+    private KeranjangSidePage keranjangSidePage;
 
     @Test
-    public void openProductTerbaru(){
+    public void checkOutProductWithoutLogin(){
         productPage = indexPage.clickProdukTerbaru();
         detailPage = productPage.selectProductByArtisAndProductName("Megadeth","Super Collider");
         detailPage.selectProductSize("L");
+        keranjangSidePage = detailPage.clickButtonBeli();
+        keranjangSidePage.clickCheckoutButton();
+
     }
 }
