@@ -1,6 +1,7 @@
 package page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,6 +13,7 @@ import java.time.Duration;
 public class IndexPage {
     private WebDriver driver;
     private By buttonMasuk = By.id("login-link");
+    private By container = By.xpath("//*[@id=\"content\"]/div[2]");
     private By buttonAcceptCookie = By.id("hs-eu-confirmation-button");
     private By inputSearch = By.name("filter_artist");
     private By buttonAkunSaya = By.id("account-dd-link");
@@ -51,5 +53,10 @@ public class IndexPage {
     public AccountPage clickButtonAkunSaya(){
         driver.findElement(buttonAkunSaya).click();
         return new AccountPage(driver);
+    }
+
+    public void scrollToContainer(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",driver.findElement(container));
+
     }
 }

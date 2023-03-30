@@ -38,6 +38,37 @@ public class ProductPage {
             System.out.println(e.getMessage());
         }
         return new ProductDetailPage(driver);
+
+        /* Hover element
+        WebElement ele = driver.findElement(By.xpath("<xpath>"));
+
+        //Creating object of an Actions class
+        Actions action = new Actions(driver);
+
+        //Performing the mouse hover action on the target element.
+        action.moveToElement(ele).perform();
+         */
+
+
+
+
+
+        /* Upload file
+        WebElement uploadElement = driver.findElement(By.id("uploadfile_0"));
+
+        // enter the file path onto the file-selection input field
+        uploadElement.sendKeys("C:\\newhtml.html");
+
+        // check the "I accept the terms of service" check box
+        driver.findElement(By.id("terms")).click();
+
+        // click the "UploadFile" button
+        driver.findElement(By.name("send")).click();
+         */
+
+
+
+
         /*
         String getArtisName = driver.findElement(textArtisName).getText();
         String getProductName = driver.findElement(textProductName).getText();

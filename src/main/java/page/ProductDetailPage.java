@@ -13,27 +13,30 @@ public class ProductDetailPage {
     private WebDriver driver;
     private By textBandName = By.className("large-hd");
     private By textProductName = By.className("medium-hd");
-    private By optionRadioSize = By.className("option-row");
+    private By optionRadioSize = By.className("radio_btn");
     private By buttonBeli = By.name("submit");
-    private By radioSizeL = By.xpath("//*[@id=\"pro_option1\"]/div/label/span");
+    private By radioSizeL = By.xpath("//*[@id=\"pro_option1\"]/div/label[3]/span");
 
     public ProductDetailPage(WebDriver driver) {
         this.driver = driver;
     }
 
     public void selectProductSize(String size){
+        //driver.findElement(radioSizeL).click();
         checkAvailableSize(size);
     }
 
     private void checkAvailableSize(String sizeSearch){
+        String size;
         List<WebElement> listSize = driver.findElements(optionRadioSize);
-        for (int i = 0; i < listSize.size(); i++){
-            String size = listSize.get(i).getText();
-            if (sizeSearch.equals(size)){
-                System.out.println("Ditemukan "+size);
-                driver.findElement(radioSizeL).click();
+        for (WebElement elementSize : listSize){
+            size = elementSize.getText();
+            if (size.equals(sizeSearch)){
+                System.out.println("Ditemukan Size tersedia : "+size+" Size dicari : "+sizeSearch);
+                elementSize.click();
             }else {
-                System.out.println("Tidak di temukan");
+                System.out.println("Size dicari : "+sizeSearch+ " Tidak Di Temukan");
+                System.out.println(size);
             }
         }
     }

@@ -15,7 +15,7 @@ public class CheckoutWithoutLoginTest extends BaseSetup {
     @Test
     public void checkOutProductWithoutLogin(){
         productPage = indexPage.clickProdukTerbaru();
-        detailPage = productPage.selectProductByArtisAndProductName("Megadeth","Super Collider");
+        detailPage = productPage.selectProductByArtisAndProductName("The Strokes","Distressed OG Magna White");
         detailPage.selectProductSize("L");
         keranjangSidePage = detailPage.clickButtonBeli();
         keranjangSidePage.clickCheckoutButton();

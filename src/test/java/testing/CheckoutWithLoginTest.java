@@ -18,7 +18,7 @@ public class CheckoutWithLoginTest extends BaseSetup {
         loginPage = indexPage.clickButtonMasuk();
         loginPage.inputLoginForm("ucokbeler81@gmail.com", "Jakarta123.");
         productPage = indexPage.clickProdukTerbaru();
-        detailPage = productPage.selectProductByArtisAndProductName("Megadeth","Super Collider");
+        detailPage = productPage.selectProductByArtisAndProductName("Motorhead","England");
         detailPage.selectProductSize("L");
         keranjangSidePage = detailPage.clickButtonBeli();
         keranjangSidePage.clickKeranjangBelanjaButton();

@@ -13,5 +13,6 @@ public class LoginValidTest extends BaseSetup {
     public void testLoginWithInvalidCredential(){
         loginPage = indexPage.clickButtonMasuk();
         index = loginPage.inputLoginForm("ucokbeler81@gmail.com","Jakarta123.");
+        index.scrollToContainer();
     }
 }
