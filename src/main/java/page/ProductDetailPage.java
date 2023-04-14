@@ -14,6 +14,7 @@ public class ProductDetailPage {
     private By textBandName = By.className("large-hd");
     private By textProductName = By.className("medium-hd");
     private By optionRadioSize = By.className("radio_btn");
+    private By statusBox = By.id("product-stock-status");
     private By buttonBeli = By.name("submit");
     private By radioSizeL = By.xpath("//*[@id=\"pro_option1\"]/div/label[3]/span");
 
@@ -21,8 +22,7 @@ public class ProductDetailPage {
         this.driver = driver;
     }
 
-    public void selectProductSize(String size){
-        //driver.findElement(radioSizeL).click();
+    public void selectProductSize(String size){ 
         checkAvailableSize(size);
     }
 
@@ -47,4 +47,18 @@ public class ProductDetailPage {
         driver.findElement(buttonBeli).click();
         return new KeranjangSidePage(driver);
     }
+
+    public String getProductName(){
+        return driver.findElement(textProductName).getText();
+    }
+
+    public String getBandName(){
+        return driver.findElement(textBandName).getText();
+    }
+
+    public String getProductStockStatus(){
+        System.out.println(driver.findElement(statusBox).getText());
+        return driver.findElement(statusBox).getText();
+    }
+
 }

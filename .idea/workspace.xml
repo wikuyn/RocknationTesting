@@ -4,31 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3993733a-4299-4e4a-acbe-a9d085a7b0bd" name="Default Changelist" comment="testing website rocknation">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3993733a-4299-4e4a-acbe-a9d085a7b0bd" name="Default Changelist" comment="fixing checkout">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testing/OpenDetailProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testing/SelectSizeProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid4188.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replay_pid4188.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/checkOutProductWithoutLogin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/checkoutWithLoginTest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/nevigateToProdukTerbaru.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/searchProductInvalidTest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/searchProductValidTest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/testLoginInvalidUnregis.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/testLoginInvalidWrongPassword.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/screenshot/testLoginWithInvalidCredential.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/IndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/IndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/KeranjangSidePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/KeranjangSidePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/page/ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/ProductDetailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testing/CheckoutWithLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testing/CheckoutWithLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testing/CheckoutWithoutLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testing/CheckoutWithoutLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testing/LoginValidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testing/LoginValidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/page/IndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/IndexPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/page/KeranjangSidePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/KeranjangSidePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/page/ProductDetailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/ProductDetailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testing/CheckoutWithoutLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testing/CheckoutWithoutLoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testing/LoginValidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testing/LoginValidTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testing/CheckoutWithLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testing/CheckoutWithLoginTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,41 +45,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
-  <component name="RunManager" selected="TestNG.CheckoutWithoutLoginTest">
-    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RocknationTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testing" />
-      <option name="MAIN_CLASS_NAME" value="testing.AlertTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckoutWithLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RocknationTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testing" />
-      <option name="MAIN_CLASS_NAME" value="testing.CheckoutWithLoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SelectSizeProductTest.selectInvalidProductSize">
     <configuration name="CheckoutWithoutLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RocknationTesting" />
       <extension name="coverage">
@@ -113,7 +63,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginValidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenDetailProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RocknationTesting" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +72,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testing" />
-      <option name="MAIN_CLASS_NAME" value="testing.LoginValidTest" />
+      <option name="MAIN_CLASS_NAME" value="testing.OpenDetailProductTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -130,7 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenNewProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectSizeProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RocknationTesting" />
       <extension name="coverage">
         <pattern>
@@ -139,8 +89,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testing" />
-      <option name="MAIN_CLASS_NAME" value="testing.OpenNewProductTest" />
+      <option name="MAIN_CLASS_NAME" value="testing.SelectSizeProductTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectSizeProductTest.selectInvalidProductSize" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RocknationTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testing" />
+      <option name="MAIN_CLASS_NAME" value="testing.SelectSizeProductTest" />
+      <option name="METHOD_NAME" value="selectInvalidProductSize" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectSizeProductTest.selectValidProductSize" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RocknationTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testing" />
+      <option name="MAIN_CLASS_NAME" value="testing.SelectSizeProductTest" />
+      <option name="METHOD_NAME" value="selectValidProductSize" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SelectSizeProductTest.selectInvalidProductSize" />
+        <item itemvalue="TestNG.SelectSizeProductTest.selectValidProductSize" />
+        <item itemvalue="TestNG.SelectSizeProductTest" />
+        <item itemvalue="TestNG.OpenDetailProductTest" />
         <item itemvalue="TestNG.CheckoutWithoutLoginTest" />
-        <item itemvalue="TestNG.CheckoutWithLoginTest" />
-        <item itemvalue="TestNG.AlertTest" />
-        <item itemvalue="TestNG.OpenNewProductTest" />
-        <item itemvalue="TestNG.LoginValidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678463356385</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixing checkout">
+      <created>1680167809626</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680167809627</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,7 +183,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing website rocknation" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing website rocknation" />
+    <MESSAGE value="fixing checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing checkout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -199,6 +193,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/testing/SearchInvalidProductTest.java</url>
           <line>5</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testing/OpenDetailProductTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
