@@ -50,6 +50,12 @@ public class IndexPage {
         return new LoginPage(driver);
     }
 
+
+    public AccountPage clickAkunSaya(){
+        driver.findElement(buttonAkunSaya).click();
+        return new AccountPage(driver);
+    }
+
     public AccountPage clickButtonAkunSaya(){
         driver.findElement(buttonAkunSaya).click();
         return new AccountPage(driver);

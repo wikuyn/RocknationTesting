@@ -26,4 +26,5 @@ public class LoginPage {
         driver.findElement(inputPassword).sendKeys(password, Keys.ENTER);
         return new IndexPage(driver);
     }
+
 }
