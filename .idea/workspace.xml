@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3993733a-4299-4e4a-acbe-a9d085a7b0bd" name="Default Changelist" comment="add detail product test and size product test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/testing/AddProductToChartInvalid.java" afterDir="false" />
+    <list default="true" id="3993733a-4299-4e4a-acbe-a9d085a7b0bd" name="Default Changelist" comment="create test for add to chart">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testing/AddProductToChartValid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/AccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/AccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/IndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/IndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/ProductDetailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testing/LoginValidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testing/LoginValidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testing/SelectSizeProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testing/SelectSizeProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/page/AccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/AccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/page/IndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/IndexPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/page/ProductDetailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page/ProductDetailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testing/LoginValidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testing/LoginValidTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681454697663</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create test for add to chart">
+      <created>1682522083230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682522083230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +193,8 @@
     <MESSAGE value="testing website rocknation" />
     <MESSAGE value="fixing checkout" />
     <MESSAGE value="add detail product test and size product test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add detail product test and size product test" />
+    <MESSAGE value="create test for add to chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test for add to chart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
